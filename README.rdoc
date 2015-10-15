@@ -1,8 +1,6 @@
-== README
-
-To reproduce the error:
+== Example
 
 - bundle install
 - rake db:create db:migrate
 - rails s
-- go to: http://localhost:3000/pianos/new
+

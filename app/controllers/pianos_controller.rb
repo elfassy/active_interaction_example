@@ -25,7 +25,7 @@ class PianosController < ApplicationController
   # POST /pianos
   # POST /pianos.json
   def create
-    outcome = CreatePiano.run(params: params, user: User.first)
+    outcome = CreatePiano.run(params: params[:piano], user: User.first)
 
     respond_to do |format|
       if outcome.valid?
